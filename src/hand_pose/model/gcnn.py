@@ -5,9 +5,7 @@ import math
 import torch
 import torch.nn.functional as F
 
-from src.utils.config import ADJ_INDICES
-from src.utils.config import ADJ_MAT_VALUE
-from src.utils.config import NUM_JOINTS
+from src.utils.config import ADJ_INDICES, ADJ_MAT_VALUE, NUM_JOINTS
 
 
 class SparseMM(torch.autograd.Function):

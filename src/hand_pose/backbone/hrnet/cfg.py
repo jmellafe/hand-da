@@ -8,7 +8,6 @@ from __future__ import annotations
 
 from yacs.config import CfgNode as CN
 
-
 cfg = CN()
 
 cfg.OUTPUT_DIR = ""

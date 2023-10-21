@@ -10,14 +10,16 @@ from pathlib import Path
 import torch
 from pytorch_transformers.modeling_bert import BertConfig
 
-from src.hand_pose.backbone.hrnet.config import cfg as hrnet_config
+from hand_pose.backbone.hrnet.cfg import cfg as hrnet_config
 from src.hand_pose.backbone.hrnet.hrnet_gridfeat import get_cls_net_gridfeat
 from src.hand_pose.model.graphormer import Graphormer
 from src.hand_pose.utils.datatypes import BackboneArch
-from src.utils.config import HAND_TEMPLATE
-from src.utils.config import HRNET_W64_CONFIG_PATH
-from src.utils.config import HRNET_W64_PATH
-from src.utils.config import NUM_JOINTS
+from src.utils.config import (
+    HAND_TEMPLATE,
+    HRNET_W64_CONFIG_PATH,
+    HRNET_W64_PATH,
+    NUM_JOINTS,
+)
 
 
 class CamParamFC(torch.nn.Module):

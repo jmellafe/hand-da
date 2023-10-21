@@ -10,17 +10,18 @@ from __future__ import annotations
 import math
 
 import torch
-from pytorch_transformers.modeling_bert import BertEmbeddings
-from pytorch_transformers.modeling_bert import BertIntermediate
-from pytorch_transformers.modeling_bert import BertOutput
-from pytorch_transformers.modeling_bert import BertPooler
-from pytorch_transformers.modeling_bert import BertPreTrainedModel
-from pytorch_transformers.modeling_bert import BertSelfOutput
+from pytorch_transformers.modeling_bert import (
+    BertEmbeddings,
+    BertIntermediate,
+    BertOutput,
+    BertPooler,
+    BertPreTrainedModel,
+    BertSelfOutput,
+)
 from pytorch_transformers.modeling_utils import prune_linear_layer
 from torch import nn
 
 from .gcnn import GraphResBlock
-
 
 LayerNormClass = torch.nn.LayerNorm
 BertLayerNorm = torch.nn.LayerNorm
