@@ -10,7 +10,7 @@ from pathlib import Path
 import torch
 from pytorch_transformers.modeling_bert import BertConfig
 
-from hand_pose.backbone.hrnet.cfg import cfg as hrnet_config
+from src.hand_pose.backbone.hrnet.cfg import cfg as hrnet_config
 from src.hand_pose.backbone.hrnet.hrnet_gridfeat import get_cls_net_gridfeat
 from src.hand_pose.model.graphormer import Graphormer
 from src.hand_pose.utils.datatypes import BackboneArch
