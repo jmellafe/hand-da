@@ -8,7 +8,7 @@ WORKDIR /app
 COPY requirements.txt .
 
 # fixes some gpu problems
-#RUN apt-get update && apt-get install libgl1 -y
+# RUN apt-get update && apt-get install libgl1 -y
 
 # Install the Python packages specified in requirements.txt
 RUN pip install -r requirements.txt
