@@ -1,0 +1,8 @@
+awscli==1.29.67
+cryptography==41.0.4
+dvc==3.27.0
+pre-commit==3.5.0
+pyopenssl==23.2.0
+pytest==6.2.5
+pytorch-transformers==1.2.0
+yacs==0.1.8

@@ -1,0 +1,44 @@
+# modified from https://github.com/pre-commit/pre-commit/blob/main/.pre-commit-config.yaml
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+    -   id: trailing-whitespace
+    -   id: end-of-file-fixer
+    -   id: check-yaml
+    -   id: debug-statements
+    -   id: requirements-txt-fixer
+-   repo: https://github.com/asottile/setup-cfg-fmt
+    rev: v2.5.0
+    hooks:
+    -   id: setup-cfg-fmt
+-   repo: https://github.com/pycqa/isort
+    rev: 5.12.0
+    hooks:
+    -   id: isort
+        args: ["--profile", "black", "--filter-files"]
+-   repo: https://github.com/asottile/pyupgrade
+    rev: v3.15.0
+    hooks:
+    -   id: pyupgrade
+        args: [--py38-plus]
+-   repo: https://github.com/psf/black
+    rev: 22.12.0
+    hooks:
+    - id: black
+      language_version: python3
+-   repo: https://github.com/myint/autoflake
+    rev: v1.4
+    hooks:
+    - id: autoflake
+      args:
+      - --in-place
+      - --remove-unused-variables
+      - --remove-all-unused-imports
+      - --expand-star-imports
+      - --ignore-init-module-imports
+-   repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.6.0
+    hooks:
+    -   id: mypy
+        additional_dependencies: [types-all]
