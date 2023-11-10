@@ -174,16 +174,3 @@ class GraphormerHandNetwork(torch.nn.Module):
         cam_param = self.cam_params_fc(pred_3d_joints)
 
         return cam_param, pred_3d_joints
-
-
-if __name__ == "__main__":
-    model = GraphormerHandNetwork()
-
-    model = model.to("cuda")
-
-    imgs = torch.zeros((10, 3, 224, 224))
-
-    aa = model(imgs.to("cuda"))
-
-    cam_param, pred_3d_joints = aa
-    print("hye")
