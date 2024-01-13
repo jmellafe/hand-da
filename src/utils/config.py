@@ -32,6 +32,9 @@ JOINT_NAME = (
     "Pinky_4",
 )
 
+# knuckles indices
+KNUCKLES_INDICES = [2, 5, 9, 13, 17]
+
 ## index follows same order as previously defined JOINT_NAMES
 HAND_TEMPLATE = [
     [
